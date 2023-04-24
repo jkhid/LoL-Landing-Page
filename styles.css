@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* line-height: 2px; */ /* was causing issue of text overlapping in sign-up */
+    font-family: "Friz Quadrata TT", Arial;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* width: 100vw; */
+  }
+  
+  
+  /* Column-1 with navigation bar, description and title */
+  .col-1 {
+    padding-bottom: 20px;
+    background-color: #1F2937;
+  }
+  
+  /* Navigation bar */
+  .nav-bar {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 4px solid rgb(59, 59, 59);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 2px white;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+    /* gap: 10px; */
+  }
+  
+  .logo:hover {
+    cursor: pointer;
+  }
+  
+  .logo img {
+    width: 50px;
+    margin-right: 8px;
+  }
+  
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-right: 35px;
+  }
+  
+  li {
+    padding: 20px 0px 20px 0px;
+  }
+  
+  ul li a {
+    padding: 0px 0px 4px 0px;
+    margin-bottom: 25px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    transition: all 0.3s 0s ease;
+    border-bottom: 1px solid #EDDC91;
+    color: #EDDC91;
+  }
+  /* Navigation bar ends */
+  
+  .col-1-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 100px 0px;
+    /* margin: 80px 30px; */
+    color: white;
+    /* background-color: rgb(49, 49, 49); */
+    /* margin: 50px; */
+  }
+  
+  .col-1-1 img {
+    width: 380px;
+    border-radius: 30px;
+  }
+  
+  .sign-up {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px 0px 18px;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* justify-content: flex-start; */
+    /* margin: 0px 100px 0px 100px; */
+    /* white-space: normal; */
+  }
+  
+  .sign-up .title {
+    line-height: 1;
+    font-weight: bolder;
+    font-size: 40px;
+  }
+  
+  .sign-up .description {
+    /* used <br> in html to break the line  */
+    font-size: 17px;
+  }
+  
+  .sign-up button {
+    margin-top: 5px;
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    width: 80px;
+    border-radius: 50px;
+    border: none;
+    background-color: blue;
+  }
+  
+  .sign-up button:hover {
+    background-color: white;
+    color: blue;
+    transition: all 0.5s 0s ease;
+  }
+  /* Column-1 ends  */
+  
+  
+  /* Column-2 with the list of members */
+  .col-2 {
+    text-align: center;
+    background-color: #314158;
+    padding: 100px 0px 180px 0px;
+  }
+  
+  .regions-text {
+    font-size: 40px;
+    padding: 0px 20px 50px 20px;
+    color: white;
+    font-weight: bolder;
+  }
+  
+  .regions-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 18px; /* does te same job as (.members .name) */
+    font-weight: bold;
+    color: white;
+    /* gap: px; */
+    /* margin-top: 50px; */
+  }
+  
+  
+  .regions {
+    padding: 40px 50px 0px 50px;
+  }
+  
+  .regions img {
+    width: 200px;
+    height: 200px;
+    border: 5px groove snow;
+    border-radius: 20px;
+  }
+  
+  .regions #demacia:hover {
+    box-shadow: 0 10px 30px rgb(16, 16, 175);
+    transform: scale(1.04);
+    transition: all 0.2s 0s linear;
+  }
+  
+  .regions #noxus:hover {
+    box-shadow: 0 10px 30px orangered;
+    transform: scale(1.04);
+    transition: all 0.2s 0s linear;
+  }
+  
+  .regions #ionia:hover {
+    box-shadow: 0 10px 30px yellow;
+    transform: scale(1.04);
+    transition: all 0.2s 0s linear;
+  }
+  
+  /* Column-2 ends */
+  
+  
+  /* Column-3 with quote */
+  .col-3 {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #1F2937;
+    border: 1px solid #EDDC91;
+   
+  }
+  
+  .col-3-padding {
+    padding: 100px;
+  }
+  /* Column-3 ends */
+  
+  
+  /* Column-4 with contact */
+  .col-4 {
+    width: 100%;
+    padding: 50px 100px;
+    background-color: #314158;
+  }
+  
+  .contact {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin: 100px 340px; */
+    background-color: #1F2937;
+    color: white;
+    gap: 20px;
+  }
+  
+  .contact-text h2 {
+    line-height: 1;
+    font-size: 28px;
+  }
+  
+  .contact-text p {
+    padding-top: 10px;
+    font-size: 15px;
+  }
+  
+  .contact-btn {
+    padding: 15px 80px;
+  }
+  
+  .contact-btn button {
+    margin-top: 5px;
+    color: white;
+    font-size: 14px;
+    padding: 15px;
+    width: 100px;
+    border-radius: 8px;
+    border: none;
+    background-color: blue;
+  }
+  
+  .contact button:hover {
+    background-color: white;
+    color: blue;
+    transition: all 0.5s 0s ease;
+  }
+  /* Column-4 ends */
+  
+  
+  /* Footer with copyright */
+  footer {
+    background-color: gray;
+    font-size: 12px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+  }
+  /* Footer ends */
+  
+  /* For responsiveness on small screens */
+  @media only screen and (max-width: 300px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+  
+  @media only screen and (max-width: 450px){
+      .col-1-1 img{
+          width: 330px;
+      }
+  
+      .col-3{
+          font-size: 24px;
+      }
+  
+      .col-3-padding{
+          padding: 40px;
+      }
+  }

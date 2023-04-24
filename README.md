@@ -1,4 +1,5 @@
-League of Legends Landing Page
+#League of Legends Landing Page
+
 This is a sample landing page for League of Legends created using HTML and CSS with flexbox. This landing page features a responsive design that adjusts to different screen sizes and displays League of Legends-related information in an attractive and easy-to-read format.
 
 Technologies Used
